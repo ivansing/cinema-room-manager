@@ -41,44 +41,7 @@ public class Cinema {
         mainCinemaMenu(matrix, rows, columns);
     }
 
-//    private static void showStatistics(int rows, int columns, int[][] matrix) {
-//        int totalSeats = rows * columns;
-//        int bookedSeats = 0;
-//        int currentIncome = 0;
-//        int result = 0;
-//
-//        for(int i = 0; i < rows; i++) {
-//            for(int j = 0; j < columns; j++) {
-//                if(matrix[i][j] == 1) {
-//                    bookedSeats++;
-//                    currentIncome += calculateTicketPrice(matrix, rows, i + 1, columns, totalSeats);
-//                }
-//            }
-//        }
-//
-//        double percentage = ((double) bookedSeats / totalSeats) * 100;
-//
-//        // Calculate ticket price based on front and back rows
-//        int frontRows = rows / 2;
-//        int backRows = rows - frontRows;
-//
-//        if (bookedSeats == 0) {
-//            // No purchased tickets, set result to STANDARD_TICKET_PRICE
-//            result = STANDARD_TICKET_PRICE;
-//        } else if (bookedSeats <= backRows * columns) {
-//            // Calculate based on back rows
-//            result = DISCOUNT_TICKET_PRICE;
-//        } else {
-//            // Calculate based on front rows
-//            result = STANDARD_TICKET_PRICE;
-//        }
-//
-//        System.out.println("Number of purchased tickets: " + bookedSeats);
-//        System.out.println("Percentage: " + String.format("%.2f", percentage) + "%");
-//        System.out.println("Current income: $" + currentIncome);
-//        System.out.println("Total income: $" + totalSeats * result);
-//
-//    }
+
 private static void showStatistics(int rows, int columns, int[][] matrix) {
     int totalSeats = rows * columns;
     int bookedSeats = 0;
